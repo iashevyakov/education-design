@@ -14,7 +14,7 @@ class Person(models.Model):
 
 
 class Module(models.Model):
-    type = models.CharField(max_length=20)
+    type = models.CharField(max_length=20, verbose_name='Тип')
     info = models.TextField(verbose_name='Информация', null=True, blank=True)
 
 
